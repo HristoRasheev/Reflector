@@ -1,9 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    background: #0b0b0f;
+    color: white;
+}
+
+/* CONTAINER */
 .container {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* NAVBAR */
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.navbar a {
+    color: #aaa;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.navbar a:hover {
+    color: white;
+}
+
+.nav-btn {
+    padding: 8px 18px;
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.2);
+    background: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.hero {
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    height: 100vh;
-    background-color: #12023e;
+    align-items: center;
+    gap: 20px;
 
+    text-align: center;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.hero span {
+    background: linear-gradient(90deg, #009dff, #4784ff);
+    -webkit-text-fill-color: transparent;
+}
+
+.cta-btn {
+    margin-top: 20px;
+    padding: 14px 28px;
+    border-radius: 30px;
+    border: none;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.cta-btn:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+.hero-glow {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(255, 123, 0, 0.829), transparent 70%);
+    filter: blur(80px);
+    z-index: -1;
 }
