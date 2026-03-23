@@ -2,37 +2,61 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reflector</title>
-    <link href="style.css" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reflector — Their music, your reflection</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <div class="container">
-        <header class="navbar">
-            <div class="logo">Reflector</div>
-            <nav>
-                <a href="#">About</a>
-                <a href="#">How it Works</a>
-                <a href="#">Reflections</a>
-            </nav>
-        </header>
 
-        <section class="hero">
-            <h1>
-                Their music<br>
-                <span>your reflection</span>
+    <section class="hero">
+
+        <!-- Background glow container -->
+        <div class="bg-glow"></div>
+
+        <!-- Floating circle graphic -->
+        <div class="circle-graphic">
+            <img src="assets/logo_hero.png" alt="Reflector app graphic" />
+        </div>
+
+        <nav>
+            <div class="nav-logo-wrap">
+                <div class="nav-logo-icon">
+                    <img src="assets/just_the_logo.png" alt="Reflector logo" />
+                </div>
+                <span class="nav-logo-text">Reflector</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">How it works</a></li>
+                <li><a href="#">Reflectons</a></li>
+            </ul>
+        </nav>
+
+        <!-- Hero content -->
+        <div class="hero-content">
+            <h1 class="hero-headline">
+                <span class="headline-line1">Their music,</span>
+                <span class="headline-line2">
+                    <span class="headline-your">your</span>
+                    <span class="headline-reflection">&nbsp;reflection</span>
+                </span>
             </h1>
 
-            <button class="cta-btn">Join Beta</button>
+            <button class="btn-join">
+                <div class="btn-glass-blur"></div>
+                <div class="btn-glass-screen"></div>
+                <span class="btn-label">Join Beta</span>
+            </button>
+        </div>
 
-            <div class="hero-glow"></div>
-        </section>
+        <div class="hero-bottom"></div>
+    </section>
 
-    </div>
-
-    <script src="script.js"></script>
 </body>
 
 </html>
