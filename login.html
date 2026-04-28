@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reflector — Log in</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@700&family=Roboto:wght@400&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="login-page">
+
+    <section class="login-wrapper">
+        <div class="login-card">
+
+            <!-- Logo + Title -->
+            <div class="login-header">
+                <img src="assets/just_the_logo.png" alt="Reflector logo" class="login-logo" />
+                <h1 class="login-title">Reflector</h1>
+            </div>
+
+            <!-- Form -->
+            <div class="login-form">
+
+                <!-- Email -->
+                <div class="field-group">
+                    <label class="field-label">Email Address</label>
+                    <div class="field-input-wrap">
+                        <input type="email" class="field-input" placeholder="Placeholder" />
+                    </div>
+                </div>
+
+                <!-- Password -->
+                <div class="field-group">
+                    <label class="field-label">Password</label>
+                    <div class="field-input-wrap">
+                        <input type="password" class="field-input" placeholder="Placeholder" id="passwordInput" />
+                        <button class="field-eye" onclick="togglePassword()" type="button" aria-label="Toggle password"></button>
+                    </div>
+                    <p class="field-hint">It must be a combination of minimum 8 letters, numbers, and symbols.</p>
+                </div>
+
+                <!-- Remember me + Forgot password -->
+                <div class="login-row">
+                    <label class="remember-wrap">
+                        <input type="checkbox" class="remember-checkbox" />
+                        <span class="remember-label">Remember me</span>
+                    </label>
+                    <a href="#" class="forgot-link">Forgot Password?</a>
+                </div>
+
+                <!-- Log in button -->
+                <button class="btn-login" type="button">
+                    <span class="btn-login-label">Log in</span>
+                </button>
+
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
