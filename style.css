@@ -25,7 +25,6 @@ html, body {
   overflow-x: hidden;
 }
 
-/* ── HERO SECTION ── */
 .hero {
   position: relative;
   width: 100%;
@@ -35,7 +34,6 @@ html, body {
   flex-direction: column;
 }
 
-/* ── BACKGROUND GLOW ── */
 .bg-glow {
   position: absolute;
   inset: 0;
@@ -43,7 +41,6 @@ html, body {
   z-index: 0;
 }
 
-/* ── CIRCULAR GRAPHIC ── */
 .circle-graphic {
   position: absolute;
   right: 0%;
@@ -56,7 +53,6 @@ html, body {
   object-fit: contain;
 }
 
-/* ── NAV ── */
 nav {
   position: relative;
   z-index: 10;
@@ -66,6 +62,7 @@ nav {
 }
 
 .nav-logo-wrap {
+  cursor: pointer;
   display: flex;
   align-items: center;
   gap: 12px;
@@ -114,7 +111,6 @@ nav {
   color: rgba(255, 255, 255, 0.95);
 }
 
-/* ── HERO CONTENT ── */
 .hero-content {
   position: relative;
   z-index: 5;
@@ -160,7 +156,7 @@ nav {
   color: var(--text-primary);
 }
 
-/* ── JOIN BETA BUTTON ── */
+/* join beta */
 .btn-join {
   position: relative;
   display: inline-flex;
@@ -212,12 +208,10 @@ nav {
   letter-spacing: -0.5px;
 }
 
-/* ── BOTTOM SPACER ── */
 .hero-bottom {
   height: 80px;
 }
 
-/* ── ANIMATIONS ── */
 @keyframes fadeUp {
   to {
     opacity: 1;
@@ -230,26 +224,7 @@ nav {
   to   { transform: translateY(-50%) translateY(-18px); }
 }
 
-/* ── RESPONSIVE ── */
-@media (max-width: 900px) {
-  nav { padding: 32px 32px 0; }
-  .nav-links { gap: 28px; }
-  .nav-links a { font-size: 17px; }
-  .hero-content { padding: 40px 32px 0; }
-  .circle-graphic { width: 55vw; height: 55vw; right: -5%; }
-  .btn-join { width: 220px; height: 66px; }
-  .btn-label { font-size: 28px; }
-}
-
-@media (max-width: 600px) {
-  .circle-graphic { opacity: 0.4; right: -15%; }
-  .nav-links { gap: 20px; }
-  .nav-links a { font-size: 15px; }
-}
-
-
-/* LOGIN PAGE*/
-
+/* login page */
 body.login-page {
   display: flex;
   align-items: center;
@@ -427,4 +402,26 @@ body.login-page {
   font-weight: 700;
   color: #080b25;
   font-family: 'SF Pro Display', sans-serif;
+}
+
+/* ── ABOUT PAGE ── */
+body.about-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+  padding: 60px 80px 100px;
+}
+
+.about-img {
+  width: 100%;
+  max-width: 1400px;
+  border-radius: 20px;
+  display: block;
 }
