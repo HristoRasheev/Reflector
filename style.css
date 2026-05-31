@@ -4,7 +4,6 @@
   padding: 0;
 }
 
-/* ── DESIGN TOKENS ── */
 :root {
   --bg: #07071a;
   --text-primary: rgba(255, 247, 247, 0.88);
@@ -15,7 +14,6 @@
   --btn-text: #080b25;
 }
 
-/* ── BASE ── */
 html, body {
   width: 100%;
   height: 100%;
